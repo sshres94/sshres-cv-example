@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Reginald Plotter's Resume"
+author: Sanjay Shrestha
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -34,8 +34,8 @@ position_data <- read_csv('positions.csv') %>%
   mutate(
     # Build some custom sections by collapsing others
     section = case_when(
-      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
-      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      section %in% c('research_positions', 'industry_positions', 'fictional_positions') ~ 'positions', 
+      section %in% c('data_science_scribbles', 'by_me_press', 'academic_articles') ~ 'writings',
       TRUE ~ section
     )
   ) 
@@ -47,18 +47,18 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](fictional.jpg){width=50%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> reginald.plotter@imaginary.com
+- <i class="fa fa-twitter"></i> YouAre-a-Wizard
+- <i class="fa fa-github"></i> https://github.com/sshres94/sshres-cv-example
+- <i class="fa fa-link"></i> [https://sshres94.github.io/sshres-cv-example](https://sshres94.github.io/sshres-cv-example)
+- <i class="fa fa-phone"></i> (123) 456-7890
 
 
 
@@ -74,8 +74,8 @@ skills <- tribble(
   "Python",             4,
   "Bash",               3.5,
   "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  "C++",                2,
+  "AWK",                1
 )
 build_skill_bars(skills)
 ```
@@ -85,10 +85,10 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
+All projects available at `github.com/sshres94/<name>`
 
 
-- `shinysense`: R package to use sensor data in Shiny apps
+- `montyhall`: R package to solve the Monty Hall problem
 - `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
 - `slid3r`: D3 add-on for fully svg slider inputs
 
@@ -96,7 +96,7 @@ All projects available at `github.com/nstrayer/<name>`
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at https://sshres94.github.io/sshres-cv-example for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
@@ -104,7 +104,7 @@ Disclaimer {#disclaimer}
 
 Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+Source code: [https://github.com/sshres94/sshres-cv-example](https://github.com/sshres94/sshres-cv-example).
 
 Last updated on `r Sys.Date()`.
 
@@ -114,13 +114,13 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Reginald Plotter {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
+intro_text <- "I am a fictional scholar, writer, and data enthusiast specializing in the analysis of imagined worlds and their inhabitants. I completed my undergraduate studies in Fictional Studies from University of Fictions and graduate studies in Fictional Studies from Fictional University. 
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+With a background in Fictional Studies and data science, I specializes in turning questionable plot points, fictional statistics, and improbable stories into surprisingly respectable research. 
 "
 
 
