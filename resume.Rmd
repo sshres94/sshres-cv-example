@@ -19,7 +19,7 @@ library(tidyverse)
 library(glue)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -96,7 +96,7 @@ All projects available at `github.com/sshres94/<name>`
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at https://sshres94.github.io/sshres-cv-example for more complete list of positions and publications.
+See full CV at https://sshres94.github.io/sshres-cv-example/cv.html for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
